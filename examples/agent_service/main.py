@@ -3,8 +3,11 @@
 import os
 
 import uvicorn
+from dotenv import load_dotenv
 from fastapi.middleware import Middleware
 from fastapi.middleware.cors import CORSMiddleware
+
+load_dotenv()
 
 from agentscope.app import (
     create_app,

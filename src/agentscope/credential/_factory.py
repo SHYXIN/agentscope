@@ -10,6 +10,7 @@ from ._deepseek import DeepSeekCredential
 from ._gemini import GeminiCredential
 from ._moonshot import MoonshotCredential
 from ._ollama import OllamaCredential
+from ._longcat import LongCatCredential
 from ._openai import OpenAICredential
 from ._xai import XAICredential
 from ._base import CredentialBase
@@ -38,6 +39,7 @@ class CredentialFactory:
         DashScopeCredential,
         DeepSeekCredential,
         GeminiCredential,
+        LongCatCredential,
         MoonshotCredential,
         OllamaCredential,
         OpenAICredential,

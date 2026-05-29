@@ -45,6 +45,8 @@ dependencies = [
     "tree_sitter_bash",
     "ripgrep",
     "jsonschema",
+    "apscheduler>=3.11.2",
+    "python-dotenv>=1.2.2",
 ]
 
 [project.optional-dependencies]
@@ -116,6 +118,11 @@ include-package-data = true
 [build-system]
 requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "python-dotenv>=1.2.2",
+]
 
 [tool.setuptools.dynamic]
 version = {attr = "agentscope._version.__version__"}
